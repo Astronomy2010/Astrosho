@@ -1,0 +1,26 @@
+**Domestic Cats vs. Big Cats**
+
+A Venn diagram can help visualize the similarities and differences between domestic cats and big cats:
+
+```mermaid
+classDiagram
+    class DomesticCat {
+        - Small size
+        - Purrs
+        - Often kept as pets
+    }
+
+    class BigCat {
+        - Large size
+        - Roars
+        - Typically wild
+    }
+
+    DomesticCat "is a" --|> Cat
+    BigCat "is a" --|> Cat
+
+    class Cat {
+        - Carnivorous
+        - Retractable claws
+        - Nocturnal
+    }
